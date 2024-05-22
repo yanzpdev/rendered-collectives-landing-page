@@ -1,0 +1,74 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.custom-swiper {
+  --swiper-navigation-color: #fff;
+  --swiper-pagination-color: #fff;
+  @apply transition-colors;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper-slide {
+  background-size: cover;
+  background-position: center;
+}
+
+.mySwiper2 {
+  height: 100%;
+  width: 100%;
+}
+
+.swiper-tag {
+  @apply h-auto lg:h-[550px] w-full;
+  /* width: 80%; */
+  /* height: 450px; */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.swiper {
+  @apply w-full lg:w-10/12;
+  /* width: 80%; */
+}
+
+
+.mySwiper {
+  box-sizing: border-box;
+  padding: 10px 0;
+}
+
+.mySwiper .swiper-slide {
+  @apply h-[80px] lg:h-[150px] w-1/12 lg:w-1/4 opacity-40;
+  /* width: 25%; */
+  /* opacity: 0.4; */
+}
+
+.mySwiper .swiper-slide-thumb-active {
+  @apply opacity-100;
+  /* opacity: 1; */
+}
+
+.no-scroll {
+  overflow: hidden;
+}
