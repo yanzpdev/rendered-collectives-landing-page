@@ -129,7 +129,11 @@ const GalleryPage: React.FC = () => {
       </motion.main>      
       <Footer />
       {showOverlay && index !== null && (
-        <Panel tag='div'
+        <motion.div 
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1}}
+          transition={{ duration: 1 }}
+          key={index}
           className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50"
         >
           <Panel tag='div' className="relative">
@@ -171,7 +175,7 @@ const GalleryPage: React.FC = () => {
               />
             </Panel>
           </Panel>
-        </Panel>
+        </motion.div>
       )}
     </Panel>
   );

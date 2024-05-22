@@ -13,8 +13,8 @@ const Feedback = () => {
         viewport={{ once: true }}
         transition={{ duration: 1 }}
       >
-        <HeaderTag level={2} className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">Feedback</HeaderTag>
-        <p className="text-base md:text-lg mb-4">Here are some positive reviews from our previous clients.</p>
+        <HeaderTag level={2} className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">Feedbacks</HeaderTag>
+        <p className="text-base md:text-lg mb-4">What our satisfied clients say about us.</p>
         <Panel tag='div' className='w-full xl:w-4/5 mx-auto h-full rounded-xl drop-shadow-xl bg-white p-6 sm:p-10 grid grid-cols-1 sm:grid-cols-10 gap-6'>
           <Panel tag='div' className='h-32 w-32 rounded-full bg-red-500 mb-4 sm:col-span-2 md:col-span-3 lg:col-span-2' />
           <Panel tag='div' className='sm:col-span-8 md:col-span-7 lg:col-span-8 flex flex-col gap-y-3'>
