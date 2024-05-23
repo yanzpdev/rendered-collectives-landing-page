@@ -129,14 +129,17 @@ const GalleryPage: React.FC = () => {
       </motion.main>      
       <Footer />
       {showOverlay && index !== null && (
-        <motion.div 
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1}}
-          transition={{ duration: 1 }}
-          key={index}
+        <Panel 
+          tag='div'
           className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50"
         >
-          <Panel tag='div' className="relative">
+          <motion.div 
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1}}
+            transition={{ duration: 0.5 }}
+            key={index}
+            className="relative"
+          >
             <Button
               className="absolute top-2 right-2 text-white text-3xl lg:text-6xl"
               onClick={closeOverlay}
@@ -174,8 +177,8 @@ const GalleryPage: React.FC = () => {
                 quality={100}
               />
             </Panel>
-          </Panel>
-        </motion.div>
+          </motion.div>
+        </Panel>
       )}
     </Panel>
   );
